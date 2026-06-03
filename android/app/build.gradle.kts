@@ -5,6 +5,8 @@ plugins {
     id("dev.flutter.flutter-gradle-plugin")
 }
 
+import java.util.Properties
+
 android {
     namespace = "com.karimasaad.medical_app"
     compileSdk = flutter.compileSdkVersion
@@ -26,18 +28,28 @@ android {
         versionName = flutter.versionName
     }
 
+    val keyProperties = Properties()
+    val keyPropertiesFile = rootProject.file("key.properties")
+    if (keyPropertiesFile.exists()) {
+        keyProperties.load(keyPropertiesFile.inputStream())
+    }
+
     signingConfigs {
         create("release") {
-            keyAlias = "medical_app_key"
-            keyPassword = "password123"
-            storeFile = file("key.jks")
-            storePassword = "password123"
+            if (keyPropertiesFile.exists()) {
+                keyAlias = keyProperties["keyAlias"] as String
+                keyPassword = keyProperties["keyPassword"] as String
+                storeFile = file(keyProperties["storeFile"] as String)
+                storePassword = keyProperties["storePassword"] as String
+            }
         }
     }
 
     buildTypes {
         release {
-            signingConfig = signingConfigs.getByName("release")
+            if (keyPropertiesFile.exists()) {
+                signingConfig = signingConfigs.getByName("release")
+            }
             
             // Enable R8 for code shrinking, obfuscation, and optimization
             isMinifyEnabled = true
