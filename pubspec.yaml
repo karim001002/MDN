@@ -30,6 +30,7 @@ dependencies:
   http_certificate_pinning: ^3.0.1
   package_info_plus: ^8.0.0
   crypto: ^3.0.3
+  flutter_signature_scan: ^1.0.0
 
 dev_dependencies:
   flutter_test:
