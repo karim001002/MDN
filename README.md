@@ -7,24 +7,23 @@ The code is intentionally incomplete and modified. It is not production-ready as
 Overview
 A Flutter based medical application designed to connect patients with doctors.
 Features include specialty browsing, doctor listing's detailed profiles and real-time chat.
-This project demonstrates a production-grade architecture using modern Flutter patterns.
+This project demonstrates a production-grade architecture using modern flutter patterns.
 
 Architecture Highlights
 Clean separation of concerns: screens / services / providers / models / widgets
 Multi-layer security gate before app entry
-Responsive UI with flutter_screenutil
-Full RTL support for Arabic
+Responsive UI with flutter screenutil
+full RTL support for Arabic
 
 Important Notice
-This code is intentionally modified. Sensitive configurations, credentials and core logic have been omitted or altered on purpose.
+This code is intentionally modified. Sensitive configurations credentials and core logic have been omitted or altered on purpose.
 If you are a developer looking to collaborate or learn more feel free to reach out.
 Cloning this repo and expecting it to run out of the box will not work — by design.
 
 Copyright © 2026 Karim Asaad Qabil. All rights reserved.
 
 This source code is proprietary and confidential.
-No part of this code may be copied, modified, distributed,
-or used in any form without explicit written permission
+No part of this code may be copied modified, distributed or used in any form without explicit written permission
 from the author.
 
 Viewing this code does not grant any license or rights.
