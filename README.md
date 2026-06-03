@@ -1,3 +1,5 @@
+The code is intentionally incomplete. The purpose here is to train you to solve problems independently rather than having everything fully provided.
+
 Medical App — Flutter
 The architecture is the lesson the rest is intentionally yours to figure out.
 This repository is shared for reference and learning purposes only.
