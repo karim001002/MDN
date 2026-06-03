@@ -1,12 +1,11 @@
-// Copyright (c) 2026 Karim Asaad Qabil. All rights reserved.
-// Licensed under the MIT License.
+//Copyright © 2026 Karim Asaad Qabil. All rights reserved.
 
-// Copyright (c) 2026 Karim Asaad Qabil. All rights reserved.
-// Licensed under the MIT License.
+This source code is proprietary and confidential.
+No part of this code may be copied, modified, distributed,
+or used in any form without explicit written permission
+from the author.
 
-// Copyright (c) 2026 Karim Asaad Qabil. All rights reserved.
-// Licensed under the MIT License.
-
+Viewing this code does not grant any license or rights.
 // Developed by Karim Asaad Qabil
 // Date: Jun 03, 2026
 
