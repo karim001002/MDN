@@ -98,3 +98,4 @@ class MedicalApp extends ConsumerWidget {
     );
   }
 }
+// Final Security & Branding
